@@ -1,4 +1,4 @@
-# Attempting to integrate Jest with Nuxt.js
+# Jest with Nuxt.js
 ## Example used: Dynamic Components with Nuxt.js
 
 * `yarn or npm i`
