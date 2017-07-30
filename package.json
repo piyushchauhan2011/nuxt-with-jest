@@ -2,7 +2,9 @@
   "name": "dynamic-components-nuxt-with-jest",
   "version": "1.0.0",
   "dependencies": {
-    "nuxt": "latest"
+    "nuxt": "latest",
+    "vue": "^2.4.2",
+    "vue-server-renderer": "^2.4.2"
   },
   "license": "MIT",
   "jest": {
@@ -24,12 +26,12 @@
   },
   "devDependencies": {
     "@types/jest": "^20.0.2",
+    "avoriaz": "^2.4.3",
     "babel-cli": "^6.24.1",
     "babel-jest": "^20.0.3",
     "babel-preset-es2015": "^6.24.1",
-    "jest": "^20.0.4",
-    "avoriaz": "^2.4.3",
     "chai": "^4.1.0",
+    "jest": "^20.0.4",
     "jest-vue-preprocessor": "^1.0.1"
   }
 }

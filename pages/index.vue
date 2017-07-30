@@ -2,7 +2,7 @@
   <div>
     <h1>Nuxt Chat</h1>
     <transition-group name="list" tag="ul">
-      <li v-for="(message, index) in messages" :key="index">
+      <li :key="index" v-for="(message, index) in messages">
         <component :is="message.component" :data="message.data"></component>
       </li>
     </transition-group>
@@ -10,12 +10,12 @@
 </template>
 
 <script>
-import streamMessages from '~/js/messages.js'
+import streamMessages from '@/js/messages.js'
 // Dynamic components
 const components = {
-  vText: () => import('~/components/text.vue').then(m => m.default),
-  vImage: () => import('~/components/image.vue').then(m => m.default),
-  vCode: () => import('~/components/code.vue').then(m => m.default)
+  vText: () => import('@/components/text.vue').then(m => m.default),
+  vImage: () => import('@/components/image.vue').then(m => m.default),
+  vCode: () => import('@/components/code.vue').then(m => m.default)
 }
 
 export default {
