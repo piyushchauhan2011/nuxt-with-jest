@@ -16,6 +16,12 @@ describe('Counter', () => {
     expect(wrapper.contains('button')).toEqual(true)
   })
 
+  test('test increment function', () => {
+    expect(wrapper.vm.count).toBe(0);
+    wrapper.vm.increment();
+    expect(wrapper.vm.count).toBe(1);
+  })
+
   afterEach(() => {
     wrapper = null
   })
