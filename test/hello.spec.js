@@ -10,6 +10,7 @@ describe('Hello Component', () => {
 
   test('snapshot', () => {
     let $html = $mounted.$el.outerHTML
+    console.log($html);
     expect($html).toMatchSnapshot()
   })
 })

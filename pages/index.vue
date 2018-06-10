@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Nuxt Chat</h1>
+    <h1 class="red">Nuxt Chat</h1>
     <transition-group name="list" tag="ul">
       <li :key="index" v-for="(message, index) in messages">
         <component :is="message.component" :data="message.data"></component>
@@ -36,6 +36,9 @@ export default {
 </script>
 
 <style scoped>
+.red {
+  color: red;
+}
 h1 {
   text-align: center;
   font-family: Helvetica, Arial, sans-serif;
