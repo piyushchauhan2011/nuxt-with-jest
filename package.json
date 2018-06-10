@@ -5,6 +5,9 @@
     "nuxt": "1.4.1"
   },
   "license": "MIT",
+  "babel": {
+    "presets": ["env"]
+  },
   "jest": {
     "verbose": true,
     "moduleFileExtensions": [
